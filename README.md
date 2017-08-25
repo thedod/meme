@@ -2,11 +2,13 @@
 
 Accessible and reusable way to create memes. Text overlay, modifiable, shareable. Don't waste trees! Use the same image with different overlay text! Text to speech readable! Responsive! Profit!
 
-Check it online at: http://mcdlr.com/meme/
+Check it online at: https://thedod.github.io/meme/
 
-Check [an example to see it working](http://mcdlr.com/meme/#/img?url=aHR0cDovL21jZGxyLmNvbS9pL3RoZS1xdWljay1icm93bi1mb3gtanVtcHMtb3Zlci10aGUtbGF6eS1kb2cuZ2lm&fl=VGhlIHF1aWNrIGJyb3duIGZveA&sl=anVtcHMgb3ZlciB0aGUgbGF6eSBkb2c)
+Here's [an example](https://thedod.github.io/meme/#/img?url=aHR0cHM6Ly90aGVkb2QuZ2l0aHViLmlvL21lbWUvY2F0cy5qcGc&fl=157XlCDXlNep15nXkCDXqdec15vXnQ&sl=15HXlNeo15vXkdeqINek15DXltecINep15wg16nXoNeZ16bXnD8&rtl=tru://thedod.github.io/meme/#/img?url=aHR0cHM6Ly90aGVkb2QuZ2l0aHViLmlvL21lbWUvY2F0cy5qcGc&fl=V2hvIG9yZGVyZWQ&sl=dG9mdT8)
 
-Work in progress. Test project for AngularJS.
+Based on @DrummerHead's [code](https://github.com/DrummerHead/meme), this version also has an [RTL](https://en.wikipedia.org/wiki/Right-to-left) option.
+
+Here's [an RTL exaple](https://thedod.github.io/meme/#/img?url=aHR0cHM6Ly90aGVkb2QuZ2l0aHViLmlvL21lbWUvY2F0cy5qcGc&fl=157XlCDXlNep15nXkCDXqdec15vXnQ&sl=15HXlNeo15vXkdeqINek15DXltecINep15wg16nXoNeZ16bXnD8&rtl=true) (Hebrew).
 
 # Running
 
