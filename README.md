@@ -4,7 +4,7 @@ Accessible and reusable way to create memes. Text overlay, modifiable, shareable
 
 Check it online at: https://thedod.github.io/meme/
 
-Here's [an example](https://thedod.github.io/meme/#/img?url=aHR0cHM6Ly90aGVkb2QuZ2l0aHViLmlvL21lbWUvY2F0cy5qcGc&fl=157XlCDXlNep15nXkCDXqdec15vXnQ&sl=15HXlNeo15vXkdeqINek15DXltecINep15wg16nXoNeZ16bXnD8&rtl=tru://thedod.github.io/meme/#/img?url=aHR0cHM6Ly90aGVkb2QuZ2l0aHViLmlvL21lbWUvY2F0cy5qcGc&fl=V2hvIG9yZGVyZWQ&sl=dG9mdT8)
+Here's [an example](https://thedod.github.io/meme/#/img?url=aHR0cHM6Ly90aGVkb2QuZ2l0aHViLmlvL21lbWUvY2F0cy5qcGc&fl=V2hvIG9yZGVyZWQ&sl=dG9mdT8).
 
 Based on @DrummerHead's [code](https://github.com/DrummerHead/meme), this version also has an [RTL](https://en.wikipedia.org/wiki/Right-to-left) option.
 
