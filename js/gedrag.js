@@ -73,7 +73,7 @@ function mainController($scope, $route, $routeParams, $location, MemeData){
 
 function rootController($scope, $route, $routeParams, $location, $rootScope, MemeData){
   $scope.createLink = function(){
-    $scope.lincoln = $scope.docRoot + 'img?url=' + $scope.utf8ToBase64($scope.imageUrl) + '&fl=' + $scope.utf8ToBase64($scope.firstLine) + '&sl=' + $scope.utf8ToBase64($scope.secondLine);
+    $scope.lincoln = $scope.docRoot + 'img?url=' + $scope.utf8ToBase64($scope.imageUrl) + '&fl=' + $scope.utf8ToBase64($scope.firstLine) + '&sl=' + $scope.utf8ToBase64($scope.secondLine) + ($scope.isRTL?'&rtl=true':'');
     setTimeout(function(){
       document.querySelector('.share-field input').select();
     }, 100);
@@ -82,6 +82,7 @@ function rootController($scope, $route, $routeParams, $location, $rootScope, Mem
   $rootScope.chromeHeight = 32 + 48 + 60;
 
   var memeData = MemeData.getMemeData();
+  $scope.isRTL = memeData.isRTL;
   $scope.imageUrl = memeData.imageUrl;
   $scope.firstLine = memeData.firstLine;
   $scope.secondLine = memeData.secondLine;
@@ -95,10 +96,11 @@ function imageController($scope, $route, $routeParams, $location, $rootScope, Me
   $scope.imageUrl = $scope.b64ToUtf8($routeParams.url);
   $scope.firstLine = $scope.b64ToUtf8($routeParams.fl);
   $scope.secondLine = $scope.b64ToUtf8($routeParams.sl);
+  $scope.isRTL = !!$routeParams.rtl;
 
   $rootScope.chromeHeight = 32 + 60;
-
   var memeData = {
+    'isRTL' : $scope.isRTL,
     'imageUrl' : $scope.imageUrl,
     'firstLine' : $scope.firstLine,
     'secondLine' : $scope.secondLine
@@ -146,6 +148,7 @@ ngMeme.directive('cradle', function($rootScope){
 
 ngMeme.factory('MemeData', function(){
   var memeData = {
+    'isRTL' : false,
     'imageUrl' : '',
     'firstLine' : '',
     'secondLine' : ''

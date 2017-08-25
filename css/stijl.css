@@ -19,6 +19,9 @@ body {
 header, main {
   display: block;
 }
+
+.rtl { direction: rtl }
+.ltr { direction: ltr }
 a {
   background: transparent;
 }
@@ -260,12 +263,17 @@ header {
   height: 32px;
   padding: 0 0 16px 0;
 }
+header label,
+header input[type="checkbox"],
 header input[type="url"],
 header input[type="text"] {
   float: left;
-  width: 32.53333333333333%;
   margin: 0 1.2% 0 0;
 }
+header label { margin-left: -1% }
+header input[type="checkbox"] { width: 2%; }
+header input[type="url"], header input[type="text"] { width: 30%; }
+
 header input:last-child {
   margin-right: 0;
 }
