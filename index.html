@@ -27,9 +27,9 @@
 
   <script type='text/ng-template' id='partials/root.html'>
     <header role='banner'>
-      <input name="checkbox-rtl" type='checkbox' data-ng-model='isRTL'>
+      <input id="checkbox-rtl" type='checkbox' data-ng-model='isRTL'>
       <label for="#checkbox-rtl">RTL</label>
-      <input type='url' placeholder='image url' data-ng-model='imageUrl'>
+      <input type='text' placeholder='/path/to/image' data-ng-model='imageUrl'>
       <input type='text' placeholder='first line' data-ng-model='firstLine'
           ng-class="isRTL&&'rtl'||'ltr'">
       <input type='text' placeholder='second line' data-ng-model='secondLine'
@@ -61,7 +61,7 @@
 
   <script type='text/ng-template' id='partials/meme-area.html'>
     <div id='meme-frame' data-ng-style='frameStyle()'>
-      <img id='meme' data-ng-src='{{imageUrl}}' cradle alt='{{firstLine}} {{secondLine}}'>
+      <img id='meme' data-ng-src='{{urlPrefix}}{{imageUrl}}' cradle alt='{{firstLine}} {{secondLine}}'>
       <p id='first-line' ng-class="isRTL&&'rtl'||'ltr'">
         {{firstLine}}
       </p>

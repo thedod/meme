@@ -31,6 +31,7 @@ ngMeme.config(['$routeProvider', '$locationProvider', function($routeProvider, $
 function mainController($scope, $route, $routeParams, $location, MemeData){
   $scope.$route = $route;
   $scope.$location = $location;
+  $scope.urlPrefix = `${location.protocol}//${location.host}`;
   $scope.$routeParams = $routeParams;
   $scope.docRoot = window.location.origin + '/meme/#/';
 

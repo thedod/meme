@@ -297,7 +297,7 @@ header input:last-child {
   width: 100%;
 }
 .share-trigger button[disabled]:after {
-  content: "Supply a valid image url to share";
+  content: "Please enter image path";
   width: 17em;
   line-height: 2;
   position: absolute;

@@ -1,5 +1,15 @@
 # Meme in text
 
+----
+
+This branch only accepts relative image URLs, to prevent Tor deanonymization attacks.
+If the same domain also provides an image uploader (e.g. lut.im),
+users can upload images and gif animations they want to use in memes.
+
+Example "in the wild": https://xjo4i6mysuwoe72l.onion/blog/category/memes.html
+
+----
+
 Accessible and reusable way to create memes. Text overlay, modifiable, shareable. Don't waste trees! Use the same image with different overlay text! Text to speech readable! Responsive! Profit!
 
 Check it online at: https://thedod.github.io/meme/
