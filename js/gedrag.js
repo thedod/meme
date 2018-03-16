@@ -91,6 +91,10 @@ function rootController($scope, $route, $routeParams, $location, $rootScope, Mem
   $scope.autoSelect = function($event){
     $event.currentTarget.setSelectionRange(0,7777777);
   }
+
+  $scope.imageUrlAbs2Rel = function() {
+    $scope.imageUrl = $scope.imageUrl.replace(/https?:\/\/[^\/]*/i, '');
+  }
 }
 
 function imageController($scope, $route, $routeParams, $location, $rootScope, MemeData){

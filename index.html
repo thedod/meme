@@ -19,7 +19,7 @@
 </main>
 
 <div id='moribus'>
-  <script src='//ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js'></script>
+  <script src='js/vendor/angular.min.js'></script>
   <script>
     window.angular || document.write("<script src='/meme/js/vendor/angular.min.js'><\/script>");
   </script>
@@ -29,7 +29,8 @@
     <header role='banner'>
       <input id="checkbox-rtl" type='checkbox' data-ng-model='isRTL'>
       <label for="#checkbox-rtl">RTL</label>
-      <input type='text' placeholder='/path/to/image' data-ng-model='imageUrl'>
+      <input type='text' placeholder='/path/to/image' data-ng-model='imageUrl'
+             ng-change='imageUrlAbs2Rel()'>
       <input type='text' placeholder='first line' data-ng-model='firstLine'
           ng-class="isRTL&&'rtl'||'ltr'">
       <input type='text' placeholder='second line' data-ng-model='secondLine'
